@@ -9,8 +9,9 @@
     <%= render 'form', task: Task.new %>
   </header>
 
-
-  <% @tasks.each do |task| %>
-    <%= render task %>
-  <% end %>
+  <div id="list">
+    <% @tasks.each do |task| %>
+      <%= render task %>
+    <% end %>
+  </div>
 </div>
