@@ -4,7 +4,11 @@
   <header>
     <h2 id="date"><%= l Date.today %></h2>
     <p id="task-count">
-      <%= @tasks.count %> Tasks
+      <% if @tasks.count > 1 %>
+        <%= @tasks.count %> Tasks
+      <% else %>
+        <%= @tasks.count %> Task
+      <% end %>
     </p>
     <%= render 'form', task: Task.new %>
   </header>
