@@ -8,5 +8,5 @@
         <%= task.created_at %>
       </p>
     </div>
-  <button value=${id} class="fas fa-times btn delete-btn"></button>
+  <%= button_to '', task, method: :delete, class: 'fas fa-times btn delete-btn' %>
 </div>
