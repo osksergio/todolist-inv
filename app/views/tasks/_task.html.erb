@@ -5,7 +5,7 @@
         <%= task.name %>
       </h3>
       <p class="time">
-        <%= task.created_at %>
+        <%= l task.created_at, format: :custom %>
       </p>
     </div>
   <%= button_to '', task, method: :delete, class: 'fas fa-times btn delete-btn' %>
