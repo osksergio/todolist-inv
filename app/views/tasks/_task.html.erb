@@ -1,12 +1,12 @@
-<div id="<%= dom_id task %>">
-  <p>
-    <strong>Name:</strong>
-    <%= task.name %>
-  </p>
-
-  <p>
-    <strong>Finished:</strong>
-    <%= task.finished %>
-  </p>
-
+<div class="cards">
+  <button class="fas fa-check btn resolved-btn" type="button"></button>
+    <div class="cards-info">
+      <h3 class="task">
+        <%= task.name %>
+      </h3>
+      <p class="time">
+        <%= task.created_at %>
+      </p>
+    </div>
+  <button value=${id} class="fas fa-times btn delete-btn"></button>
 </div>
